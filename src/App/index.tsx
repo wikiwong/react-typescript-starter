@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import FileSelector from './FileSelector/index';
 
 export default class App extends Component<{}, {}> {
     render() {
         return (
-            <div>Hi I'm here</div>
+            <FileSelector />
         );
     }
 }
