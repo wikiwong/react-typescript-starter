@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
-
-const StyledInput = styled.input`
-    height: 30px;
-    width: 100px;
-`;
 
 export default class FileSelector extends Component<{}, {}> {
     constructor(props: any) {
@@ -18,7 +12,7 @@ export default class FileSelector extends Component<{}, {}> {
 
     render() {
         return (
-            <StyledInput multiple type="file" onChange={this.handleChange} />
+            <input type="file" multiple onChange={this.handleChange} />
         );
     }
 }

@@ -3,12 +3,14 @@
       "module": "es6", // use ES2015 modules
       "target": "es6", // compile to ES2015 (Babel will do the rest)
       "allowSyntheticDefaultImports": true, // see below
-    //   "baseUrl": "src", // enables you to import relative to this folder
-      "sourceMap": true, // make TypeScript generate sourcemaps
-      "jsx": "preserve", // enable JSX mode, but "preserve" tells TypeScript to not transform it (we'll use Babel)
+    // "baseUrl": "src", // enables you to import relative to this folder
+      "sourceMap": true, // make TypeScript generate sourcemaps,
+      "moduleResolution": "node",
+      "jsx": "react", // enable JSX mode, but "preserve" tells TypeScript to not transform it (we'll use Babel)
       "strict": true,
-      "noImplicitAny": true,
-      "allowJs": true
+      "noImplicitAny": false,
+      "allowJs": true,
+      "outDir": "tsdist"
     },
     "exclude": [
       "node_modules" // don't run on any code in the node_modules directory

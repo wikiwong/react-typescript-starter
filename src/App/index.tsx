@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FileSelector from './FileSelector/index';
+import FileSelector from './FileSelector';
 
 export default class App extends Component<{}, {}> {
     render() {
